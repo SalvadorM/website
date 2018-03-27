@@ -1,0 +1,251 @@
+/*
+  global
+*/
+body{
+  font-family: 'Noto Sans', sans-serif;;
+  margin: 0;
+  background-color: #F5F5F5;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-top: 40px;
+ 
+}
+h1 {
+  margin-top: 0;
+}
+
+#padding-t {
+  padding-top: 90px;
+}
+/*
+  Navigation Bar
+*/
+div.container-nav {
+  position: fixed;
+  width:100%;
+  height:80px;
+  background-color: rgba(232,232,232,.7);
+
+}
+div.container-nav:hover {
+  background-color: rgb(232,232,232);
+}
+img.logo-nav {
+  padding-top: 12px;
+  padding-left: 45px;
+  width: 95px;
+  height: 55px;
+  display: inline-block;
+}
+ul {
+  display: inline-block;
+}
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a{
+  text-decoration: none;
+}
+a.nav-tab {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  color: #ff3300;
+  font-size: 25px;
+
+}
+ul a:hover {
+  border-bottom: 3px solid #003366;
+}
+#active {
+  border-bottom: 3px solid #ff3300;
+}
+div.menu-icon {
+  display: none;
+}
+
+/*
+  Jumbo
+*/
+.container-jumbo {
+  padding-top: 0;
+  background-image: url("../images/jumbo_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+.container-jumbo h1, #artist-back h1 {
+  padding-top: 180px;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bolder;
+  font-size:45px;
+  color: white;
+}
+.jumbo-p {
+  width:55%;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  padding: 70px 0px;
+}
+p.artist-state {
+  width: 90%;
+  margin: auto;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  padding: 70px 0px;
+}
+#artist-back {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+/*
+  MAIN
+*/
+
+div.side-content {
+  display: inline-block;
+  float:left;
+  border: 2px solid rgb(255, 51,  0);
+  border-radius: 10px;
+  width: 50%;
+  height: 400px;
+  overflow: auto;
+}
+div.porfolio-content {
+  display: inline-block;  
+}
+
+div.side-images{
+  display: inline-block;
+  float: right;
+}
+img.side-image {
+  height:400px;
+  width: 400px;
+}
+.side-content h1, .porfolio-content h1{
+  margin-top: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+.side-content p {
+  font-size: 19px;
+  text-align: center;
+  weight: lighter;
+  margin-top: 50px;
+}
+
+.pdf-content {
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding-top: 50px;
+   height: 100vh;
+}
+.video-content {
+  width: 100%;
+  margin: auto;
+}
+/*
+  Footer
+*/
+hr {
+  width: 80%;
+  height: 2px;
+  background-color: #003366;
+  border: none;
+}
+
+.footer-section p{
+  text-align: center;
+  font-size: .1em;
+  color: #ff3300;
+}
+
+/* ********
+  Responisve Design for Mobile
+*/
+
+@media (max-width: 768px){
+  
+/*
+  Mobile Navigation bar
+*/
+.nav-tab {
+  display: none;
+
+}
+div.menu-icon {
+  display: inline-block;
+  border: 1px solid #ff3300;
+  border-radius: 6px;
+  height: 50px;
+  width: 10%;
+  min-width: 50px;
+  float: right;
+  margin-top: 12px;
+  margin-right: 45px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.bars {
+  background-color: #003366;
+  width: 90%;
+  height: 5px;
+  margin: 6px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+  Main mobile
+*/
+div.side-content {
+  width: 100%;
+  height: 100%;
+}
+img.side-image{
+  float: initial;
+  margin: auto;
+  width: 100%;
+  height: auto;
+
+}
+div.side-content {
+  float: initial;
+}
+.video-content {
+  width: 100%;
+  margin: auto;
+}
+
+
+/*
+JS
+*/
+.dropmenu {
+  display: inline-block;
+  padding: none;
+}
+.buttonNav {
+  padding-left: none;
+  display: inline-block;
+}
+}
